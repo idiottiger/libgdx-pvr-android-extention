@@ -15,11 +15,7 @@ example folder is the library example useage.
 
 how to build & use
 ------------------------------
-set the NDK_PATH in main/build.sh build script, and run it, it will create the so file
-
-because the libgdx-pvr-android-extention need use the gdx.jar file, the project also have one copy of gdx.jar in libs folder, so cann't directed reference this project, after so file created, need export the java code to jar file.
-
-and finally copy the libs folder and export jar file to your project's libs folder
+set the __NDK_PATH__ in main/build.sh build script, and run it, it will export the jar file and SO file to __release__ folder, you need copy all files under __release__ folder to your project's __libs__ folder.
 
 
 about the code
