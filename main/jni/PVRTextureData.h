@@ -15,57 +15,68 @@ extern "C" {
 #define pkg_prvextention_PVRTextureData_TYPE_RESOURCE_EXTERNAL 2L
 
 /*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_setTextureCacheEnable
- * Signature: (Z)V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1setTextureCacheEnable(
-		JNIEnv *, jclass, jboolean);
-
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_disposeAllTextureCache
- * Signature: ()V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTextureCache(
-		JNIEnv *, jclass);
-
-/*
- * Class:     pkg_prvextention_PVRTextureData
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
  * Method:    native_preparePVRTexture
  * Signature: (ILandroid/content/res/AssetManager;Ljava/lang/String;I)V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1preparePVRTexture(
-		JNIEnv *, jobject, jint, jobject, jstring, jint);
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1preparePVRTexture
+  (JNIEnv *, jobject, jint, jobject, jstring, jint);
 
 /*
- * Class:     pkg_prvextention_PVRTextureData
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
  * Method:    native_consumeCompressedData
  * Signature: (I)V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1consumeCompressedData(
-		JNIEnv *, jobject, jint);
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_getWidth
- * Signature: (I)I
- */JNIEXPORT jint JNICALL Java_pkg_prvextention_PVRTextureData_native_1getWidth(
-		JNIEnv *, jobject, jint);
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_getHeight
- * Signature: (I)I
- */JNIEXPORT jint JNICALL Java_pkg_prvextention_PVRTextureData_native_1getHeight(
-		JNIEnv *, jobject, jint);
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_useMipMaps
- * Signature: (I)Z
- */JNIEXPORT jboolean JNICALL Java_pkg_prvextention_PVRTextureData_native_1useMipMaps(
-		JNIEnv *, jobject, jint);
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1consumeCompressedData
+  (JNIEnv *, jobject, jint);
 
 /*
- * Class:     pkg_prvextention_PVRTextureData
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_getWidth
+ * Signature: (I)I
+ */
+JNIEXPORT jint JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1getWidth
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_getHeight
+ * Signature: (I)I
+ */
+JNIEXPORT jint JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1getHeight
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_useMipMaps
+ * Signature: (I)Z
+ */
+JNIEXPORT jboolean JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1useMipMaps
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
  * Method:    native_dispose
  * Signature: (I)V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1dispose(
-		JNIEnv *, jobject, jint);
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1dispose
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_setTextureCacheEnable
+ * Signature: (Z)V
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1setTextureCacheEnable
+  (JNIEnv *, jclass, jboolean);
+
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_disposeAllTextureCache
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1disposeAllTextureCache
+  (JNIEnv *, jclass);
 
 class TexturePVRItem {
 public:

@@ -24,13 +24,23 @@ TexturePVRItem* getItemFromMap(int objectId) {
 	return item;
 }
 
-JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1setTextureCacheEnable(
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_setTextureCacheEnable
+ * Signature: (Z)V
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1setTextureCacheEnable(
 		JNIEnv *env, jclass cls, jboolean cacheEnable) {
 	sCacheEnable = cacheEnable;
 	LOGI("all pvr texture cache enable:%d", sCacheEnable);
 }
 
-JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTextureCache(
+/*
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
+ * Method:    native_disposeAllTextureCache
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1disposeAllTextureCache(
 		JNIEnv *env, jclass cls) {
 
 	LOGI("dispose all texture cache");
@@ -47,10 +57,11 @@ JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTe
 }
 
 /*
- * Class:     pkg_prvextention_PVRTextureData
+ * Class:     pkg_libgdx_pvrextention_PVRTextureData
  * Method:    native_preparePVRTexture
- * Signature: (Landroid/content/res/AssetManager;Ljava/lang/String;I)V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1preparePVRTexture(
+ * Signature: (ILandroid/content/res/AssetManager;Ljava/lang/String;I)V
+ */
+ JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1preparePVRTexture(
 		JNIEnv *env, jobject obj, jint objectId, jobject assetManager,
 		jstring path, jint type) {
 
@@ -93,11 +104,12 @@ JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTe
 	}
 }
 
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_consumeCompressedData
- * Signature: ()V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1consumeCompressedData(
+ /*
+  * Class:     pkg_libgdx_pvrextention_PVRTextureData
+  * Method:    native_consumeCompressedData
+  * Signature: (I)V
+  */
+ JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1consumeCompressedData(
 		JNIEnv *env, jobject obj, jint objectId) {
 	TexturePVRItem *item = getItemFromMap(objectId);
 	if (item && item->result) {
@@ -111,11 +123,12 @@ JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTe
 	}
 }
 
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_getWidth
- * Signature: ()I
- */JNIEXPORT jint JNICALL Java_pkg_prvextention_PVRTextureData_native_1getWidth(
+ /*
+  * Class:     pkg_libgdx_pvrextention_PVRTextureData
+  * Method:    native_getWidth
+  * Signature: (I)I
+  */
+ JNIEXPORT jint JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1getWidth(
 		JNIEnv *env, jobject obj, jint objectId) {
 	TexturePVRItem *item = getItemFromMap(objectId);
 	if (item && item->result) {
@@ -124,11 +137,12 @@ JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTe
 	return -1;
 }
 
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_getHeight
- * Signature: ()I
- */JNIEXPORT jint JNICALL Java_pkg_prvextention_PVRTextureData_native_1getHeight(
+ /*
+  * Class:     pkg_libgdx_pvrextention_PVRTextureData
+  * Method:    native_getHeight
+  * Signature: (I)I
+  */
+ JNIEXPORT jint JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1getHeight(
 		JNIEnv *env, jobject obj, jint objectId) {
 	TexturePVRItem *item = getItemFromMap(objectId);
 	if (item && item->result) {
@@ -137,11 +151,12 @@ JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTe
 	return -1;
 }
 
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_useMipMaps
- * Signature: ()Z
- */JNIEXPORT jboolean JNICALL Java_pkg_prvextention_PVRTextureData_native_1useMipMaps(
+ /*
+  * Class:     pkg_libgdx_pvrextention_PVRTextureData
+  * Method:    native_useMipMaps
+  * Signature: (I)Z
+  */
+ JNIEXPORT jboolean JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1useMipMaps(
 		JNIEnv *env, jobject obj, jint objectId) {
 	TexturePVRItem *item = getItemFromMap(objectId);
 	if (item && item->result) {
@@ -150,11 +165,12 @@ JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1disposeAllTe
 	return false;
 }
 
-/*
- * Class:     pkg_prvextention_PVRTextureData
- * Method:    native_dispose
- * Signature: (I)V
- */JNIEXPORT void JNICALL Java_pkg_prvextention_PVRTextureData_native_1dispose(
+ /*
+  * Class:     pkg_libgdx_pvrextention_PVRTextureData
+  * Method:    native_dispose
+  * Signature: (I)V
+  */
+ JNIEXPORT void JNICALL Java_pkg_libgdx_pvrextention_PVRTextureData_native_1dispose(
 		JNIEnv *env, jobject obj, jint objectId) {
 	if (sCacheEnable) {
 		TexturePVRItem *item = getItemFromMap(objectId);

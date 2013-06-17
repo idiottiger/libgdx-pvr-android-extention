@@ -31,10 +31,10 @@
 							<tool id="com.android.gcc.compiler.1046372550" name="Android GCC Compiler" superClass="com.android.gcc.compiler">
 								<option id="com.android.gcc.option.includePath.1452706851" superClass="com.android.gcc.option.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;D:\dev\android-bundle\android-ndk-r8e\platforms\android-9\arch-arm\usr\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;D:\dev\android-bundle\android-ndk-r8e\sources\cxx-stl\gnu-libstdc++\4.4.3\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\dev\android-bundle\android-ndk-r8e\sources\android&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;D:\dev\android-bundle\android-ndk-r8e\sources\cxx-stl\system\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libgdx-pvr-android-extention/jni}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\dev\android-bundle\android-ndk-r8e\sources\cxx-stl\gnu-libstdc++\4.6\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\dev\android-bundle\android-ndk-r8e\sources\cxx-stl\gnu-libstdc++\4.6\libs\armeabi\include&quot;"/>
 								</option>
 								<inputType id="com.android.gcc.inputType.333123159" superClass="com.android.gcc.inputType"/>
 							</tool>
