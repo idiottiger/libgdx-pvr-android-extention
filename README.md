@@ -8,9 +8,9 @@ libgdx-pvr-android-extention
 
 folder structure
 ----------------------------
-main  folder is the library folder.
+__main__  folder is the library folder.
 
-example folder is the library example useage.
+__example__ folder is the library example useage.
 
 
 how to build & use
